@@ -1,5 +1,5 @@
 # Docker Jenkins
-Docker image with Jenkins installed listening on port 8080. Additional packages installed git, pip and awscli tools.
+Docker image with Jenkins installed listening on port 8080.
 
 ## Usage
 To run the container, do the following:
