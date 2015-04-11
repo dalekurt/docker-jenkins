@@ -4,7 +4,7 @@ Docker image with Jenkins installed listening on port 8080.
 ## Usage
 To run the container, do the following:
 ``` bash
-docker run --name jenkins -d -p 8080:8080 dalekurt/jenkins
+docker run --name jenkins -d -p 8080:8080 -v /var/lib/jenkins:/jenkins dalekurt/jenkins
 ```
 
 ## Building
