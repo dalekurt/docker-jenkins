@@ -1,14 +1,12 @@
 # Jenkins for Ubuntu 14.04
 #
-# GitHub - http://github.com/dalekurt/docker-java7
-# Docker Hub - http://hub.docker.com/u/dalekurt/docker-java7
+# GitHub - http://github.com/dalekurt/docker-jenkins
+# Docker Hub - http://hub.docker.com/u/dalekurt/jenkins
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM stackbrew/ubuntu:14.04
+FROM dalekurt/base
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
-RUN apt-get update && apt-get clean
-RUN apt-get install -q -y openjdk-7-jre-headless && apt-get clean
 ADD http://mirrors.jenkins-ci.org/war/1.608/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
